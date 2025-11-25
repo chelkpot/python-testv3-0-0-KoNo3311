@@ -6,7 +6,7 @@ def solve():
     hours, seconds = divmod(seconds, 3600) 
     minutes, seconds = divmod(seconds, 60) 
  
-    print(f"{hours:02}:{minutes:02}:{seconds:02}") 
+    print(f"{hours:2}:{minutes:02}:{seconds:02}") 
 
 
    
