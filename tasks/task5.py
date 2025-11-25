@@ -2,12 +2,12 @@
 
 def solve():
 # Ниже пишите решение задачи
-    n=int(input())
-    n=n%(3600*24)
-    h=n//3600
-    m=n%3600//60
-    s=n%60
-    print(h,':',str(m//10)+str(m%10),':',str(s//10)+str(s%10))
+    seconds = int(input()) % 86400 
+    hours, seconds = divmod(seconds, 3600) 
+    minutes, seconds = divmod(seconds, 60) 
+ 
+    print(f"{hours:02}:{minutes:02}:{seconds:02}") 
+
 
    
 # Код ниже не трогать! он нужен для тестов
